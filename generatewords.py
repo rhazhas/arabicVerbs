@@ -21,3 +21,6 @@ while i<max_words:
                 ok=True
 print ("Liste of meaningless words :\n",meaningless_verbs)
 print ("Liste of meaningfull words :\n",meaningful_verbs)
+f=open("verbs.txt","w",encoding="utf-8")
+f.writelines("\n".join(meaningless_verbs))
+f.close()
